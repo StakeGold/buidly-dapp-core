@@ -1,1 +1,1 @@
-export { default as StakegoldButton } from "./StakegoldButton";
+export { default as Spinner } from './Spinner';

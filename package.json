@@ -10,11 +10,14 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "rollup": "rollup -c"
+    "build": "rollup -c"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "6.1.0",
+    "@fortawesome/free-solid-svg-icons": "6.1.0",
+    "@fortawesome/react-fontawesome": "0.1.18",
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
