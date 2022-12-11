@@ -9,7 +9,9 @@ export interface UseCheckVersionOptions {
 
 let currentVersion: string | undefined = undefined;
 
-const useCheckVersion = (options: UseCheckVersionOptions) => {
+const useCheckVersion = (
+  options: UseCheckVersionOptions
+): [boolean, (e: React.MouseEvent) => void] => {
   const [updateAvailable, setUpdateAvailable] = useState(false);
 
   const checkVersion = async () => {
