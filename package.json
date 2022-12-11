@@ -1,6 +1,6 @@
 {
-  "name": "@stakegold/dapp-core",
-  "version": "0.1.2-alpha.1",
+  "name": "@buidly/dapp-core",
+  "version": "0.0.1-alpha.1",
   "description": "",
   "main": "./__commonjs",
   "browser": "./",
@@ -72,14 +72,15 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "bignumber.js": "^9.1.0",
     "rc-slider": "^10.1.0",
     "rc-tooltip": "^5.2.2",
     "react-bootstrap": "^2.6.0"
   },
   "peerDependencies": {
+    "bignumber.js": "^9.1.0",
     "@apollo/client": "^3.7.0",
     "@elrondnetwork/dapp-core": "2.x",
+    "react": "18.2.0",
     "react-router-dom": "6.2.1"
   },
   "resolutions": {
