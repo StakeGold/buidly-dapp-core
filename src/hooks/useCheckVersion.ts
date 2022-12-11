@@ -42,7 +42,12 @@ const useCheckVersion = (options: UseCheckVersionOptions) => {
     };
   }, [updateAvailable]);
 
-  return updateAvailable;
+  const refreshPage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.reload();
+  };
+
+  return [updateAvailable, refreshPage];
 };
 
 export default useCheckVersion;
