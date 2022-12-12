@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import axios from 'axios';
 
 const DEFAULT_REFRESH_RATE = 60000;
@@ -52,4 +52,10 @@ const useCheckVersion = (
   return [updateAvailable, refreshPage];
 };
 
-export default useCheckVersion;
+const useGetVersion = (): string | undefined => {
+  return useMemo(() => {
+    return currentVersion;
+  }, [currentVersion]);
+};
+
+export { useCheckVersion, useGetVersion };
